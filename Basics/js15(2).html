@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>js15_html</title>
+</head>
+<body>
+    <form onsubmit="display()">
+        <table>
+            <lable>Enter data : </lable>
+            <input id="data"type="text">
+            <input type="submit"value="Click Here">
+        </table>
+    </form>
+    <script>
+        function display()
+        {
+            let data=document.getElementById("data").value;
+            alert("form is submitted. Value: "+data);
+        }
+    </script>
+</body>
+</html>

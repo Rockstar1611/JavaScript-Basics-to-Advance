@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adding_num</title>
+</head>
+<body>
+    <form onsubmit="display(); return false">
+        <table>
+            <lable>Number1 :</lable>
+            <input id="num1" text="text">
+            <br>
+            <lable>Number2 :</lable>
+            <input id="num2" text="text">
+            <br>
+            <input type="submit"value="ADD">
+            <input type="submit"value="SUB">
+            <br>
+            <input type="submit"value="MUL">
+            <input type="submit"value="DIV">
+        </table> 
+    </form>
+    <p id="para"></p>
+    <script>
+        function display()
+        {
+            let num1=document.getElementById("num1").value;
+            let num2=document.getElementById("num2").value;
+            if(num1==" "|| num2==" ")
+        {
+            aleart("Cannot leave number 1 or number 2 as eampty.!")
+        }
+        else
+        {
+            let choice=event.submitter.value;
+            switch(choice)
+            {
+                
+                case"ADD":
+                let addres= Number(num1)+Number(num2);
+                document.getElementById("para").innerHTML="Add: "+addres;
+                break;
+                case"SUB":
+                let subres= Number(num1)+Number(num2);
+                document.getElementById("para").innerHTML="Sub: "+subres;
+                break;
+                case"MUL":
+                let mulres= Number(num1)+Number(num2);
+                document.getElementById("para").innerHTML="Mul: "+mulres;
+                break;
+                case"DIV":
+                let divres= Number(num1)+Number(num2);
+                document.getElementById("para").innerHTML="Div: "+divres;
+                break;
+            }
+        }
+        }
+    </script>
+</body>
+</html>

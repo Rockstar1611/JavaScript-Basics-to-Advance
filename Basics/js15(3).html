@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>js15(3)_html</title>
+</head>
+<body>
+    <form onsubmit="display(); return false;">
+        <table>
+            <lable>Enter data : </lable>
+            <input id="data" type="text">
+            <input type="submit" value="Click Here">
+        </table>
+    </form>
+    <p id="para"></p>
+    <script>
+        function display()
+        {
+            let data=document.getElementById("data").value;
+            document.getElementById("para").innerHTML="Hello "+data;
+        }
+    </script>
+</body>
+</html>
